@@ -20,9 +20,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       "username": config.get('MYSQL_USER'),
       "password": config.get('MYSQL_PASSWD'),
       "database": config.get('MYSQL_DB'),
-      "entities": [
-        "dist/src/entities/*.ts"
-      ],
+      // "entities": [
+      //   "dist/src/entities/*.ts"
+      // ],
       autoLoadEntities: true,
       "synchronize": config.get('MYSQL_ISSync')
     }
